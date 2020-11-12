@@ -1,0 +1,259 @@
+ .container {
+    width: 55%;
+}
+figure {
+    height: 160px!important;
+}
+
+#programs_more {
+    margin-top: 25px
+}
+
+#programs_more a:nth-child(1) {
+    text-decoration: none;
+    color: black;
+    z-index: 1;
+}
+
+.zoom {
+    box-shadow: none;
+    background: none;
+    height: auto;
+}
+/* Share */
+.program h2 {
+    background-color: unset!important;
+    text-align:left;
+}
+.play-video-icon {
+    top: 30%!important;
+}
+.icon-button {
+    background-color: white;
+    border-radius: 3.6rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2.0rem;
+    height: 3.6rem;
+    line-height: 3.6rem;
+    margin: 0 5px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 3.6rem;
+}
+
+.form-group {
+    margin-bottom: 0
+}
+
+/* Circle */
+.icon-button span {
+    border-radius: 0;
+    display: block;
+    height: 0;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 0;
+}
+
+.icon-button:hover span {
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 3.6rem;
+    margin: -1.8rem;
+}
+
+.facebook span {
+    background-color: #3B5998;
+}
+
+/* Icons */
+.icon-button i {
+    background: none;
+    color: white;
+    height: 3.6rem;
+    left: 0;
+    line-height: 3.6rem;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 3.6rem;
+    z-index: 10;
+}
+
+.icon-button .icon-facebook {
+    color: #3B5998;
+}
+
+.icon-button:hover .icon-facebook {
+    color: #fff
+}
+
+/* SLIDER */
+
+.zoom {
+    border: none
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+    color: white;
+    cursor: pointer;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #05965a;
+    margin-bottom: 10px
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%
+} 
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 50px);
+}
+
+.item {
+    margin-left: 10px
+}
+
+.main p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+    padding-top: 10px
+}
+
+.main h5 {
+    padding-top: 10px;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 22px
+}
+
+/* SLIDER BUTTON */
+
+.owl-prev,.owl-next {
+    position: absolute;
+    top: -5px;
+    display: block!important;
+}
+.owl-prev, .owl-next:hover {
+    background: none!important;
+    
+}
+.owl-prev:focus, .owl-next:focus {
+    outline: none
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    height: 100%;
+}
+
+.owl-prev {
+    left: -14%;
+}
+
+.owl-next{
+    right: -14%;    
+}
+
+.owl-next span {
+    font-size: 100px;
+    color: #fff;
+}
+
+.owl-prev span {
+    font-size: 100px;
+    color: #fff;
+}
+
+/* show full day button */
+
+.show_full_day div{
+    width: 180px;
+    height: 45px;
+    background-color: #05965a;
+    font-size: 18px;
+    text-align:center;
+    padding-top: 11px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.show_full_day  {
+    color: #fff!important;
+    text-decoration: none!important
+}
+@media  (max-width:991px){
+    .container {
+        width: 100% ;
+    }
+
+    .container, .container-fluid {
+        padding: 0
+    }
+}
+
+@media (min-width: 991px) and (max-width:1500px){  
+    .container {
+        width: 70%;
+    }
+}
+@media (max-width:480px){  
+    .owl-next{
+        right: -17%;    
+    }  
+    .container, .container-fluid {
+        padding: 10px;
+    }
+}
+@media (min-width: 481px) and (max-width:600px){  
+    .owl-next{
+        right: -16%;    
+    } 
+}
+
+@media (max-width:480px){  
+    iframe {
+        max-height: 250px;
+    }
+}
+
+@media (min-width: 481px) and (max-width:767px){  
+    iframe {
+        max-height: 400px;
+    }
+    .container, .container-fluid {
+        padding: 10px;
+    }
+}
+

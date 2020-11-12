@@ -1,0 +1,140 @@
+.container {
+    width: 70%;
+}
+
+#work {
+    min-height: 70vh;
+}
+
+#work .row {
+    margin: 0;
+    margin-top: 20px;    
+}
+
+
+.works {
+    padding: 40px;
+    color: #fff;
+    margin-top: 20px;
+    height: 370px;
+   ## transition: margin-bottom 0.6s ;
+}
+
+.toggle_container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 68%;
+}
+
+.works h4 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.text-elipsis {
+    width: 100%;
+}
+
+.text-elipsis p {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: 179px;
+    margin: 0 auto;
+    font-size: 17px;
+    -webkit-line-clamp:7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.work-more-button {
+    font-size: 20px;
+    padding: 10px 10px 6px 14px;
+    cursor: pointer;    
+    color: #fff;
+    border: solid 1px #fff;
+    text-align: center;
+    margin-top: 20px
+}
+
+.work-more-info a:hover {
+    box-shadow: 2px 2px 2px gray
+}
+
+.work-more {
+    height: 0px;
+    width: 100%;
+    padding: 0px 80px;
+    margin-top: 20px;
+    display: inline-block;
+    border: 1px solid #098a54;
+    overflow-y: auto;
+}
+
+.rotate_div {
+    position: relative;
+    width: 30px;
+	height: 30px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+    border-bottom: 21px solid #098a54;;
+    top: 60px;
+}
+.abs{
+    position: absolute;
+    display: none;
+}
+.arrow{
+    display: none;
+}
+footer {
+    margin-top: 50px
+}
+
+@media  (max-width: 991px) {
+    .container {
+        width: 90%;
+    }
+
+    .work-more {
+        padding: 40px;
+    }
+
+    .page_title {
+        margin-top: 10px
+    }        
+}
+
+@media (max-width: 787px) {
+    .works {
+        background: #059759
+    }
+}
+
+ @media(min-width: 768px ) and (max-width: 1200px) {
+
+     .works-color-1 {
+        background: #059759
+    }
+    
+    .works-color-2 {
+        background: #059e5e
+    }    
+  
+}
+
+@media (min-width: 1200px ) {
+
+    .works:nth-child(3n+1) {
+        background: #098a54
+    }
+
+    .works:nth-child(3n+0) {
+        background: #059759
+    }
+
+    .works:nth-child(3n+2) {
+        background: #059e5e
+    }
+}     

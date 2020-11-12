@@ -1,0 +1,186 @@
+.container {
+    width: 70%;
+    padding: 0;
+}
+
+.contact_box {
+    height: 350px;
+    background-color: #05965a;
+}
+
+.input_box {
+    height: 350px;
+    background-color: #05965a;
+}
+
+.form-box {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact_box i {
+    font-size: 23px;
+    color: #fff;
+    line-height: 2em;
+    vertical-align: middle;
+}
+
+.contact_box a {
+    text-decoration: none;
+    color: #fff
+}
+
+.contact_box li {
+    list-style: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+.contact_box ul {
+    margin-left: 20%;
+    margin-top: 40px;
+}
+
+.contact_box li a i{
+    margin-right: 30px;
+}
+
+#contact_us .social_icons{
+    margin-top: 0;
+    width: auto;
+    text-align: start;
+}
+
+#contact_us .social_icons a {
+    padding: 0;
+    padding-left: 10px!important;
+}
+
+#contact_us .row {
+    margin: 0;
+}
+
+#contact_us .social_icons a:nth-child(1) {
+    padding-left: 0px!important;
+    width: 40px;
+}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding-left: 10px;
+    outline: none;
+    margin: 0 auto;
+    height: 30px;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+     margin: 0;
+    -moz-appearance: textfield;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}  
+
+.btn_1 {
+    background: #05965a;
+    color: #fff;
+    border: solid 1px #fff;
+    padding: 7px 20px;
+    cursor: pointer;
+    height: 35px;
+    float: right;
+    font-size: 14px;
+}
+
+.input-container textarea {
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    resize: none;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.input-container textarea:focus {
+    outline: none;
+    border: 2px solid dodgerblue
+}
+.input_box form {
+    padding-top: 50px;
+}
+@media(max-width: 480px) {
+    .contact_box li {
+        font-size: 15px!important
+    }
+    .form-box {
+        width: 90%;
+    }
+
+    iframe {
+        height: 300px;
+    }
+}
+
+@media(max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+    .contact_box ul {
+        margin-left: 0
+    }
+
+    .contact_box {
+        height: auto;
+    }
+    .input_box {
+        height: auto;
+    }
+
+    .btn_1{
+        margin-bottom: 40px;
+    }
+
+    .contact_box ul {
+        text-align: center;
+    }
+    #contact_us .social_icons {
+        text-align: center!important;
+    }
+
+    .contact_box li {
+        font-size: 17px;
+    }
+
+    .contact_box li:nth-child(4) {
+        margin-left: 17px
+    }
+}
+
+@media(min-width: 767px) and (max-width: 1024px) {
+    .container {
+        max-width: 100%!important;
+        width: 100%;
+    }
+}

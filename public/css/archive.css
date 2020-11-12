@@ -1,0 +1,187 @@
+*{
+
+  font-size: 16px;
+  font-weight: 600;
+}
+.autocomplete {
+    background: #fff;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 20px;
+    border-radius: 3px;    
+  }
+#live{
+  font-weight:200px;
+}
+.danger{
+  margin-left: 20px;
+}
+  .autocomplete .close {
+    position: absolute;
+    font-size: 13px;
+    z-index: 10;
+    top: 10px;
+    left: calc(100% - 50px);
+    color: #aaa;
+    cursor: pointer;
+    display: none;
+  }
+
+  .autocomplete .close.visible {
+    display: block;
+  }
+
+
+  .autocomplete input {
+    padding: 11px 24px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: black;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+
+  .autocomplete input:hover {
+    background-color: #2ea256;
+    color: #fff;
+  }
+  
+  .autocomplete input:hover::placeholder{
+    color: #fff;
+  }
+
+  .autocomplete input::placeholder{
+    color: black;
+  }
+  
+  .dialog {
+    width: 100%;
+    display: none;
+    min-height: 40px;
+    max-height: 330px;
+    overflow: scroll;
+    overflow-x:hidden;
+    border-top: 1px solid #f4f4f4;
+    position: absolute;
+    background-color: #fff;
+  }
+
+  .dialog.open {
+    display: block;
+  }
+
+  .dialog div {
+    padding: 11px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .dialog div:hover {
+    background: #2ea256;
+    color: #fff
+  }
+
+  div.dropdown-1,
+  div.dropdown-2,
+  div.dropdown-3 {
+    position: relative;
+  }
+  
+  div.dropdown-1 > div.caption,
+  div.dropdown-2 > div.caption,
+  div.dropdown-3 > div.caption {
+    background-color: #fff;
+    padding: 11px 24px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  div.dropdown-1 > div.list,
+  div.dropdown-2 > div.list,
+  div.dropdown-3 > div.list {
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    display: none;
+    z-index: 10;
+    overflow:scroll;
+    overflow-x:hidden;
+    height: 200px;
+  }
+  
+  div.dropdown-1 > div.list > div.item,
+  div.dropdown-2 > div.list > div.item,
+  div.dropdown-3 > div.list > div.item {
+    padding: 11px 24px;
+    cursor: pointer;
+  }
+  
+  div.dropdown-1 > div.list > div.item.selected,
+  div.dropdown-2 > div.list > div.item.selected,
+  div.dropdown-3 > div.list > div.item.selected {
+    font-weight: bold;
+  }
+  
+  div.dropdown-1 > div.caption:hover,
+  div.dropdown-2 > div.caption:hover,
+  div.dropdown-3 > div.caption:hover,
+  div.dropdown-1 > div.list > div.item:hover,
+  div.dropdown-2 > div.list > div.item:hover,
+  div.dropdown-3 > div.list > div.item:hover {
+    background-color: #2ea256;
+    color: #fff;
+  }
+  
+  div.dropdown-1.open > div.caption,
+  div.dropdown-2.open > div.caption,
+  div.dropdown-3.open > div.caption {
+    border-radius: 3px 3px 0 0;
+    border-bottom: solid 1px #999;
+  }
+  
+div.dropdown-1.open > div.list,
+div.dropdown-2.open > div.list,
+div.dropdown-3.open > div.list {
+    display: block;
+}
+
+.filter-button {
+  background: #2ea256;
+  color: #fff;
+  border: none;
+  padding: 7px 20px;
+  cursor: pointer;
+  height: 35px;
+  float: right;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#programs {
+  clear: both
+}
+
+.arrow_bottom {
+  position: absolute;
+  right: 2px;
+}
+
+@media (max-width: 767px) {
+  .autocomplete {
+    margin-bottom: 0
+  }
+  
+  .filter-type {
+    margin-bottom: 20px
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}

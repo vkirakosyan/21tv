@@ -1,0 +1,38 @@
+.page_title {
+    margin-top: 10px
+}
+
+.play-video-icon {
+    position: absolute;
+    top: 41%;
+    left: 50px;
+    z-index: 1;
+    font-size: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(73, 73, 73)
+}
+
+@media (min-width: 1px) and (max-width: 480px) {
+    .play-video-icon {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .play-video-icon {
+        font-size: 50px;
+    }   
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .play-video-icon {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .play-video-icon {
+        font-size: 50px;
+    }
+}

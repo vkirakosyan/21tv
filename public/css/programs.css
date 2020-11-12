@@ -1,0 +1,47 @@
+body {
+    background-color: #e2e2e2;
+}
+
+.container {
+    width: 70%;
+}
+
+#programs {
+    margin-bottom: 100px;
+}
+
+#programs img{    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.programs_bg {
+    padding-top: 0
+}
+
+.program_distance {
+    margin-bottom: 20px
+}
+
+#programs nav {
+    justify-content: center;
+    display: flex;
+    margin-top: 20px
+}
+figure {
+    height: 200px;
+}
+
+@media  (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media  (max-width: 991px) {
+    .page_title {
+        margin-top: 10px
+      }
+}

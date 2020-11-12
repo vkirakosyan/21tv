@@ -1,0 +1,131 @@
+.container {
+    width: 50%
+}
+
+#news_more h2 {
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+#news_more img {
+    width: 100%;
+}
+
+#news_more p {
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 1.9em;
+}
+
+.all_photos {
+    position: relative;
+}
+
+.all_photos img, .photo-number {
+    cursor: pointer;
+}
+
+.photo-number {
+    width: 140px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.219);
+    border-radius: 25px;
+    position: absolute;
+    float: right;
+    top: 18px;
+    right: 20px;  
+}
+
+.photo-number i{
+    font-size: 20px;
+}
+
+.photo-number span {
+    position: absolute;
+    top: 14px;
+    left: 17px;
+    color: #fff;
+    font-size: 17px;
+}
+
+.icon-1 {
+    border: 2px solid #fff;
+    width: 17px;
+    height: 17px;
+    border-radius: 2px;
+}
+
+.slide-icon {
+    position: relative;
+    float: right;
+    right: 15px;
+    top: 14px
+}
+
+.icon-2 {
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 2px;
+}
+
+@media  (max-width: 480px) {
+    iframe {
+        max-height: 250px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    iframe {
+        max-height: 400px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {  
+    #news_more p {
+        margin-top: 28px;
+        text-align: center;
+        line-height: 1.9em;
+    }
+    #news_more h2 {
+        text-align: center;
+        padding-top: 40px;
+        margin-bottom: 40px;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1500px){  
+    .container {
+        width: 70%;
+    }
+}
+
+/* fb comment */
+
+.fb-comments {
+    width: 100%;
+    margin-bottom: 100px;
+} 
+.fb_hide_iframes iframe {
+    left: 0!important;
+    height: 500px!important;
+    width: 100%!important;
+}
+
+.fb_iframe_widget span {
+    width: 100%!important;
+    height: 500px!important;
+}

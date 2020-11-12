@@ -1,0 +1,60 @@
+.image_block{ 
+  width: 30%;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  border: 1px #a29a9a solid;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin:10px;
+}
+.image_block img{
+  width: 100%;
+  z-index: 0;
+}
+.resize-block{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 2px #000 solid;
+    z-index: 1;
+    cursor: pointer;
+}
+.examples{
+  width: 100%;
+}
+.examples > div{
+  height: 210px;
+  display: flex;
+}
+.vertically, .horizontal, .square{
+  border:1px #000 solid;
+  margin:auto;
+}
+.vertically{
+  width: 30px;
+  height: 60px;
+}
+.horizontal{
+  width: 60px;
+  height: 30px;
+}
+.square{
+  width: 60px;
+  height: 60px;
+}
+.resize-block-control{
+  width: 100%;
+  height: 100%;
+  z-index: 15;
+}
+.resize-change-block-mainpic, .resize-change-block-photo{
+  z-index: 3;
+  border:1px #000 solid;
+  position: absolute;
+  bottom:-5px;
+  right: -5px;
+  width:10px;
+  height: 10px;
+  background-color: #fff;
+  opacity: 0.8;
+}

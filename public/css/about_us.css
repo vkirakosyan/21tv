@@ -1,0 +1,46 @@
+
+#about_us {
+    margin-bottom: 50px;
+}
+
+#about_us img{
+    width: 100%;
+}
+
+
+#about_us h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#about_us p {
+    text-align: center;
+    line-height: 1.8em;
+    margin-top: 30px;
+}
+
+.image_div{
+    max-height: 600px;
+    overflow: hidden;
+}
+
+@media (min-width: 1px) and (max-width: 767px) {
+    .container{
+        width: 90%;
+    }
+    #about_us h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media  (min-width:768px) and (max-width: 1024px) {
+    .container{
+        width: 90%;
+    }
+    #about_us h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+}
